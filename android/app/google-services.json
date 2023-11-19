@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436561710451",
+    "project_id": "airbnb-3c013",
+    "storage_bucket": "airbnb-3c013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436561710451:android:52018384b410b6be97c906",
+        "android_client_info": {
+          "package_name": "com.example.lec2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTVvYlwGndhYFkHCX9LAY75497Id48tVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

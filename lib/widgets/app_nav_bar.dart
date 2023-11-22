@@ -71,6 +71,8 @@ class AppNavBar extends StatelessWidget {
               selectedIcon: Icon(
                 Icons.person,
                 color: appRed,
+                
+                
               ),
             ),
           ],
@@ -79,3 +81,9 @@ class AppNavBar extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:lec2/screens/login_emaibas/logi_screen.dart';
+
 import 'package:lec2/screens/login_screens/appleLogin.dart';
 import 'package:lec2/screens/login_screens/emailLogin.dart';
 import 'package:lec2/screens/login_screens/faceBookLogin.dart';
 import 'package:lec2/screens/login_screens/googelLogin.dart';
+import 'package:lec2/screens/login_screens/logi_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

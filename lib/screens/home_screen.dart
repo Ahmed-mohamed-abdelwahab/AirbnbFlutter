@@ -101,7 +101,7 @@ class HomeScreen extends StatelessWidget {
                 bottom: 0.0,
                 left: 0.0,
                 right: 0.0,
-                child: PropertyTypeList(),
+                child: AppNavBar(),
               ),
             ],
           ),

@@ -1,6 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:get/get.dart';
+import 'package:lec2/main.dart';
+import 'package:lec2/navigation/app_router.dart';
 
 class LoginGoogel extends StatelessWidget {
   const LoginGoogel({super.key});
@@ -31,7 +34,7 @@ class LoginGoogel extends StatelessWidget {
         child: MaterialButton(
           onPressed: () {
             signInWithGoogle();
-            
+            Get.to(AppRouter);
           },
           child: Row(children: [
             Expanded(

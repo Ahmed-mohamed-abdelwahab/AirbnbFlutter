@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:lec2/screens/home_screen.dart';
+import 'package:lec2/screens/prodacte/hotel.dart';
 
 import '../shared/theme/colors.dart';
 
@@ -17,11 +20,11 @@ class _PropertyTypeListState extends State<PropertyTypeList> {
     final textTheme = Theme.of(context).textTheme;
 
     final List<Map<String, dynamic>> propertyTypes = [
-      {'type': 'Hotel', 'icon': Icons.hotel},
-      {'type': 'Apartment', 'icon': Icons.apartment},
-      {'type': 'BnB', 'icon': Icons.bedroom_child},
-      {'type': 'Villa', 'icon': Icons.villa},
-      {'type': 'Resort', 'icon': Icons.holiday_village},
+      {'type': 'Hotel', 'icon': Icons.hotel, 'page': HomeScreen()},
+      {'type': 'Apartment', 'icon': Icons.apartment, 'page': HomeScreen()},
+      {'type': 'BnB', 'icon': Icons.bedroom_child, 'page': HomeScreen()},
+      {'type': 'Villa', 'icon': Icons.villa, 'page': HomeScreen()},
+      {'type': 'Resort', 'icon': Icons.holiday_village, 'page':  HotelScreen()},
     ];
     return SizedBox(
       height: 56.0,
@@ -37,27 +40,35 @@ class _PropertyTypeListState extends State<PropertyTypeList> {
               left: 4.0,
               top: 4.0,
             ),
-            child: Column(
-              children: [
-                Icon(propertyTypes[index]['icon']),
-                const SizedBox(height: 2.0),
-                Text(
-                  propertyTypes[index]['type'],
-                  style: textTheme.bodySmall!.copyWith(
-                    fontWeight: (index == selectedIndex)
-                        ? FontWeight.bold
-                        : FontWeight.normal,
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => propertyTypes[index]['page']));
+              },
+              child: Column(
+                children: [
+                  Icon(propertyTypes[index]['icon']),
+                  const SizedBox(height: 2.0),
+                  Text(
+                    propertyTypes[index]['type'],
+                    style: textTheme.bodySmall!.copyWith(
+                      fontWeight: (index == selectedIndex)
+                          ? FontWeight.bold
+                          : FontWeight.normal,
+                    ),
                   ),
-                ),
-                (index == selectedIndex)
-                    ? Container(
-                        margin: const EdgeInsets.only(top: 8.0),
-                        height: 2.0,
-                        width: 64.0,
-                        color: appBlack,
-                      )
-                    : const SizedBox()
-              ],
+                  (index == selectedIndex)
+                      ? Container(
+                          margin: const EdgeInsets.only(top: 8.0),
+                          height: 2.0,
+                          width: 64.0,
+                          color: appBlack,
+                        )
+                      : const SizedBox()
+                ],
+              ),
             ),
           );
         },

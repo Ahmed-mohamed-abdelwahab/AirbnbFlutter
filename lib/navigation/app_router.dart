@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lec2/layout/layout.dart';
 
 import '../screens/booking_details_screen.dart';
 import '../screens/home_screen.dart';
@@ -12,7 +13,7 @@ class AppRouter {
         name: 'home',
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
-          return const HomeScreen();
+          return Layout();
         },
       ),
       GoRoute(

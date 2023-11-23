@@ -25,6 +25,7 @@ class AppNavBar extends StatelessWidget {
           ),
         ),
         child: NavigationBar(
+          
           backgroundColor: Colors.white,
           surfaceTintColor: Colors.white,
           labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,

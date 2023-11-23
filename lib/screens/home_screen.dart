@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lec2/navigation/apparNav.dart';
 
 import '../models/property.dart';
 import '../shared/theme/colors.dart';
@@ -15,21 +16,22 @@ class HomeScreen extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
-      bottomNavigationBar: const AppNavBar(),
-      appBar: AppBar(
-        toolbarHeight: 128,
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            color: appWhite,
-            boxShadow: [
-              BoxShadow(
-                color: appBlack.withOpacity(0.1),
-                blurRadius: 1.0,
-                spreadRadius: 1.0,
-                offset: const Offset(0.0, 1.0),
-              )
-            ],
-          ),
+      
+       appBar: AppBar(
+         toolbarHeight: 128,
+         flexibleSpace: Container(
+           decoration: BoxDecoration(
+             color: appWhite,
+             boxShadow: [
+               BoxShadow(
+                 color: appBlack.withOpacity(0.1),
+                 blurRadius: 1.0,
+                 spreadRadius: 1.0,
+                 offset: const Offset(0.0, 1.0),
+      
+               )
+             ],
+           ),
           child: Stack(
             children: [
               Positioned(
@@ -97,12 +99,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const Positioned(
-                bottom: 0.0,
-                left: 0.0,
-                right: 0.0,
-                child: AppNavBar(),
-              ),
+              // const Positioned(
+              //   bottom: 0.0,
+              //   left: 0.0,
+              //   right: 0.0,
+              //   child: Layout(),
+              // ),
             ],
           ),
         ),

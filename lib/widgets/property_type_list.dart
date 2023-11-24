@@ -22,6 +22,16 @@ class _PropertyTypeListState extends State<PropertyTypeList> {
       {'type': 'BnB', 'icon': Icons.bedroom_child},
       {'type': 'Villa', 'icon': Icons.villa},
       {'type': 'Resort', 'icon': Icons.holiday_village},
+      {'type': 'Hotel', 'icon': Icons.hotel},
+      {'type': 'Apartment', 'icon': Icons.apartment},
+      {'type': 'BnB', 'icon': Icons.bedroom_child},
+      {'type': 'Villa', 'icon': Icons.villa},
+      {'type': 'Resort', 'icon': Icons.holiday_village},
+      {'type': 'Hotel', 'icon': Icons.hotel},
+      {'type': 'Apartment', 'icon': Icons.apartment},
+      {'type': 'BnB', 'icon': Icons.bedroom_child},
+      {'type': 'Villa', 'icon': Icons.villa},
+      {'type': 'Resort', 'icon': Icons.holiday_village},
     ];
     return SizedBox(
       height: 56.0,

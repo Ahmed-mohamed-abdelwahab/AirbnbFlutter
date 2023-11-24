@@ -1,26 +1,79 @@
 {
   "project_info": {
-    "project_number": "436561710451",
-    "project_id": "airbnb-3c013",
-    "storage_bucket": "airbnb-3c013.appspot.com"
+    "project_number": "86316670171",
+    "project_id": "front-sohag",
+    "storage_bucket": "front-sohag.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:436561710451:android:52018384b410b6be97c906",
+        "mobilesdk_app_id": "1:86316670171:android:a6943b0ee0ccc8488680fe",
         "android_client_info": {
-          "package_name": "com.example.lec2"
+          "package_name": "com.example.day5"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "86316670171-mapklf31a3qs2u302f06d6fnsm7tkjho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyCTVvYlwGndhYFkHCX9LAY75497Id48tVM"
+          "current_key": "AIzaSyAwa5gaOxO-T--Y752qdLqCP19O2spRRlk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86316670171-mapklf31a3qs2u302f06d6fnsm7tkjho.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "86316670171-2afubudjug6q8366bkd3tbobocsc6tb6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.day5"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86316670171:android:696c829a695d619d8680fe",
+        "android_client_info": {
+          "package_name": "com.example.lec2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86316670171-mapklf31a3qs2u302f06d6fnsm7tkjho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwa5gaOxO-T--Y752qdLqCP19O2spRRlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86316670171-mapklf31a3qs2u302f06d6fnsm7tkjho.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "86316670171-2afubudjug6q8366bkd3tbobocsc6tb6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.day5"
+              }
+            }
+          ]
         }
       }
     }

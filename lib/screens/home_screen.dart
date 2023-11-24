@@ -32,15 +32,8 @@ class HomeScreen extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              Positioned(
-                top: 15.0,
-                left: 15.0,
-                child: IconButton(
-                  onPressed: () {},
-                  icon: const Icon(Icons.tune),
-                ),
-              ),
-              Positioned(
+             
+             Positioned(
                 left: 90.0,
                 right: 20.0,
                 top: 0.0,
@@ -69,29 +62,62 @@ class HomeScreen extends StatelessWidget {
                             spreadRadius: 8.0,
                             offset: const Offset(0.0, 4.0),
                           ),
+                        
+
+                        
                         ],
                       ),
                       child: Row(
                         children: [
+                           const Icon(
+                            Icons.search_sharp,
+                          ),
                           Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'اين وجهتك ؟',
+                                ' Where to ?',
                                 style: textTheme.bodyMedium!
                                     .copyWith(fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                'اي مكان .اي اسبوع .اضافة ضيوف ',
+                 ' Anywhere . Anyweek .Addguest  ',
                                 style: textTheme.bodyMedium,
                               ),
                             ],
                           ),
-                          const SizedBox(width: 10.0),
-                          const Icon(
-                            Icons.search_sharp,
+                          const SizedBox(width: 250.0),
+                          Container(
+                              decoration: BoxDecoration(
+                      
+                        border: Border.all(
+                          color: appBlack.withOpacity(1.0),
+                          width: 0.5,
+                        ),
+                        borderRadius: BorderRadius.circular(32.0),
+                        // boxShadow: [
+                        //   BoxShadow(
+                        //     color: appGrey.withOpacity(1.0),
+                        //     blurRadius: 8.0,
+                        //     spreadRadius: 8.0,
+                        //     offset: const Offset(0.0, 4.0),
+                        //   ),
+                        
+
+                        
+                        // ],
+                      ),
+                            child: Positioned(
+                                          top: 15.0,
+                                          left: 150.0,
+                                          child: IconButton(
+                                            onPressed: () {},
+                                            icon: const Icon(Icons.tune),
+                                          ),
+                                        ),
                           ),
                         ],
+
                       ),
                     ),
                   ),

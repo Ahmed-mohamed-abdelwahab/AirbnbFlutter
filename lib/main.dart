@@ -1,6 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:lec2/data/getProdactServes.dart';
-import 'package:lec2/screens/home_screen.dart';
+import 'package:lec2/firebase_options.dart';
+// import 'package:lec2/navIcon/favorite.dart';
+import 'package:lec2/navIcon/profile.dart';
+// import 'package:lec2/navIcon/trps.dart';
+// import 'package:lec2/products/ProductScreen.dart';
+// import 'package:lec2/data/getProdactServes.dart';
+// import 'package:lec2/screens/home_screen.dart';
 // import 'package:lec2/screens/login_screens/loginscreen.dart';
 // import 'package:firebase_core/firebase_core.dart';
 // import 'firebase_options.dart';
@@ -15,11 +21,9 @@ import 'package:lec2/screens/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await DataBaseMongo.Connect();
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -32,7 +36,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      // home: const ProductScreen(),
+      // home: const HomeScreen(),
+      // home: const Trips(),
+      // home: const FavoriteScreen(),
+      home: const ProfileScreen(),
     );
 
     //   .router(

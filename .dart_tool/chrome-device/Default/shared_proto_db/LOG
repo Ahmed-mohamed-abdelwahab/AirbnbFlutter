@@ -1,3 +1,2 @@
-2023/11/22-15:41:02.835 221e8 Reusing MANIFEST /tmp/flutter_tools.LCKRCJ/flutter_tools_chrome_device.YTJCMJ/Default/shared_proto_db/MANIFEST-000001
-2023/11/22-15:41:02.836 221e8 Recovering log #3
-2023/11/22-15:41:02.837 221e8 Reusing old log /tmp/flutter_tools.LCKRCJ/flutter_tools_chrome_device.YTJCMJ/Default/shared_proto_db/000003.log 
+2023/11/24-15:40:04.330 b766 Creating DB /tmp/flutter_tools.XTOAGI/flutter_tools_chrome_device.ZLDIMG/Default/shared_proto_db since it was missing.
+2023/11/24-15:40:04.869 b766 Reusing MANIFEST /tmp/flutter_tools.XTOAGI/flutter_tools_chrome_device.ZLDIMG/Default/shared_proto_db/MANIFEST-000001

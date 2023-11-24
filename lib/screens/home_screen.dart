@@ -17,98 +17,98 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       
-       appBar: AppBar(
-         toolbarHeight: 128,
-         flexibleSpace: Container(
-           decoration: BoxDecoration(
-             color: appWhite,
-             boxShadow: [
-               BoxShadow(
-                 color: appBlack.withOpacity(0.1),
-                 blurRadius: 1.0,
-                 spreadRadius: 1.0,
-                 offset: const Offset(0.0, 1.0),
+    //    appBar: AppBar(
+    //      toolbarHeight: 128,
+    //      flexibleSpace: Container(
+    //        decoration: BoxDecoration(
+    //          color: appWhite,
+    //          boxShadow: [
+    //            BoxShadow(
+    //              color: appBlack.withOpacity(0.1),
+    //              blurRadius: 1.0,
+    //              spreadRadius: 1.0,
+    //              offset: const Offset(0.0, 1.0),
       
-               )
-             ],
-           ),
-          child: Stack(
-            children: [
-              Positioned(
-                top: 15.0,
-                left: 15.0,
-                child: IconButton(
-                  onPressed: () {},
-                  icon: const Icon(Icons.tune),
-                ),
-              ),
-              Positioned(
-                left: 90.0,
-                right: 20.0,
-                top: 0.0,
-                child: GestureDetector(
-                  onTap: () {
-                    context.pushNamed('booking-details');
-                  },
-                  child: Hero(
-                    tag: 'search',
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 20.0,
-                        vertical: 8.0,
-                      ),
-                      decoration: BoxDecoration(
-                        color: appWhite,
-                        border: Border.all(
-                          color: appGrey,
-                          width: 0.5,
-                        ),
-                        borderRadius: BorderRadius.circular(32.0),
-                        boxShadow: [
-                          BoxShadow(
-                            color: appGrey.withOpacity(1.0),
-                            blurRadius: 8.0,
-                            spreadRadius: 8.0,
-                            offset: const Offset(0.0, 4.0),
-                          ),
-                        ],
-                      ),
-                      child: Row(
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text(
-                                'اين وجهتك ؟',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                'اي مكان .اي اسبوع .اضافة ضيوف ',
-                                style: textTheme.bodyMedium,
-                              ),
-                            ],
-                          ),
-                          const SizedBox(width: 10.0),
-                          const Icon(
-                            Icons.search_sharp,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              // const Positioned(
-              //   bottom: 0.0,
-              //   left: 0.0,
-              //   right: 0.0,
-              //   child: Layout(),
-              // ),
-            ],
-          ),
-        ),
-      ),
+    //            )
+    //          ],
+    //        ),
+    //       child: Stack(
+    //         children: [
+    //           Positioned(
+    //             top: 15.0,
+    //             left: 15.0,
+    //             child: IconButton(
+    //               onPressed: () {},
+    //               icon: const Icon(Icons.tune),
+    //             ),
+    //           ),
+    //           Positioned(
+    //             left: 90.0,
+    //             right: 20.0,
+    //             top: 0.0,
+    //             child: GestureDetector(
+    //               onTap: () {
+    //                 context.pushNamed('booking-details');
+    //               },
+    //               child: Hero(
+    //                 tag: 'search',
+    //                 child: Container(
+    //                   padding: const EdgeInsets.symmetric(
+    //                     horizontal: 20.0,
+    //                     vertical: 8.0,
+    //                   ),
+    //                   decoration: BoxDecoration(
+    //                     color: appWhite,
+    //                     border: Border.all(
+    //                       color: appGrey,
+    //                       width: 0.5,
+    //                     ),
+    //                     borderRadius: BorderRadius.circular(32.0),
+    //                     boxShadow: [
+    //                       BoxShadow(
+    //                         color: appGrey.withOpacity(1.0),
+    //                         blurRadius: 8.0,
+    //                         spreadRadius: 8.0,
+    //                         offset: const Offset(0.0, 4.0),
+    //                       ),
+    //                     ],
+    //                   ),
+    //                   child: Row(
+    //                     children: [
+    //                       Column(
+    //                         crossAxisAlignment: CrossAxisAlignment.end,
+    //                         children: [
+    //                           Text(
+    //                             'اين وجهتك ؟',
+    //                             style: textTheme.bodyMedium!
+    //                                 .copyWith(fontWeight: FontWeight.bold),
+    //                           ),
+    //                           Text(
+    //                             'اي مكان .اي اسبوع .اضافة ضيوف ',
+    //                             style: textTheme.bodyMedium,
+    //                           ),
+    //                         ],
+    //                       ),
+    //                       const SizedBox(width: 10.0),
+    //                       const Icon(
+    //                         Icons.search_sharp,
+    //                       ),
+    //                     ],
+    //                   ),
+    //                 ),
+    //               ),
+    //             ),
+    //           ),
+    //           // const Positioned(
+    //           //   bottom: 0.0,
+    //           //   left: 0.0,
+    //           //   right: 0.0,
+    //           //   child: PropertyTypeList (),
+    //           // ),
+    //         ],
+    //       ),
+    //     ),
+    //  ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView.builder(

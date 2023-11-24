@@ -12,6 +12,9 @@
 //   State<PropertyTypeList> createState() => _PropertyTypeListState();
 // }
 
+// class _PropertyTypeListState {
+// }
+
 // class _PropertyTypeL2istState extends State<PropertyTypeList> {
 //   int selectedIndex = 0;
 //   @override
@@ -20,12 +23,19 @@
 //     final textTheme = Theme.of(context).textTheme;
 
 //     final List<Map<String, dynamic>> propertyTypes = [
-//       {'type': 'Hotel', 'icon': Icons.hotel, 'page': HomeScreen()},
-//       {'type': 'Apartment', 'icon': Icons.apartment, 'page': HomeScreen()},
-//       {'type': 'BnB', 'icon': Icons.bedroom_child, 'page': HomeScreen()},
-//       {'type': 'Villa', 'icon': Icons.villa, 'page': HomeScreen()},
-//       {'type': 'Resort', 'icon': Icons.holiday_village, 'page':  HotelScreen()},
+//       {'type': 'Hotel', 'icon': Icons.hotel, },
+//       {'type': 'Apartment', 'icon': Icons.apartment, },
+//       {'type': 'BnB', 'icon': Icons.bedroom_child, },
+//       {'type': 'Villa', 'icon': Icons.villa, },
+//       {'type': 'Resort', 'icon': Icons.holiday_village, },
 //     ];
+//     final List<Widget> screens = [
+//     HomeScreen(),
+//     HotelScreen(),
+//     HomeScreen(),
+//     HotelScreen(),
+//     HomeScreen()
+//   ];
 //     return SizedBox(
 //       height: 56.0,
 //       child: ListView.builder(

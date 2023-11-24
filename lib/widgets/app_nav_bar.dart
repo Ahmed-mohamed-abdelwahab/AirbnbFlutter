@@ -25,6 +25,7 @@ class AppNavBar extends StatelessWidget {
           ),
         ),
         child: NavigationBar(
+          
           backgroundColor: Colors.white,
           surfaceTintColor: Colors.white,
           labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
@@ -71,6 +72,8 @@ class AppNavBar extends StatelessWidget {
               selectedIcon: Icon(
                 Icons.person,
                 color: appRed,
+                
+                
               ),
             ),
           ],
@@ -79,3 +82,9 @@ class AppNavBar extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
